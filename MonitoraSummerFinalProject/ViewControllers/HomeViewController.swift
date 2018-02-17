@@ -18,6 +18,9 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Title
+        self.title = "Workshops"
 
         //TableView
         self.tableView.dataSource = self
@@ -40,21 +43,25 @@ class HomeViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "HomeToDetailSegue" {
+            if let vc = segue.destination as? DetailViewController {
+                if let workshop = sender as? Workshop {
+                    vc.selectedWorkshop = workshop
+                }
+            }
+        }
     }
-    */
-
 }
 
 extension HomeViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let workshop = self.workshopsArray[indexPath.row]
+        self.performSegue(withIdentifier: "HomeToDetailSegue", sender: workshop)
     }
 }
 
