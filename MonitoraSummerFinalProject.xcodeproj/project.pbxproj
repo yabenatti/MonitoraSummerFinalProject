@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41DB65B2038BF27004F37E8 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DB65A2038BF27004F37E8 /* ColorUtils.swift */; };
 		E42575102038B18A007C994D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E425750F2038B18A007C994D /* AppDelegate.swift */; };
 		E42575122038B18A007C994D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42575112038B18A007C994D /* ViewController.swift */; };
 		E42575152038B18A007C994D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42575132038B18A007C994D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41DB65A2038BF27004F37E8 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		E425750C2038B18A007C994D /* MonitoraSummerFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitoraSummerFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E425750F2038B18A007C994D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E42575112038B18A007C994D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				E42575222038B1C4007C994D /* WorkshopsList.plist */,
 				E42575232038B1C4007C994D /* WorkshopFactory.swift */,
+				E41DB65A2038BF27004F37E8 /* ColorUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E425752C2038B1C4007C994D /* HomeViewController.swift in Sources */,
+				E41DB65B2038BF27004F37E8 /* ColorUtils.swift in Sources */,
 				E425752A2038B1C4007C994D /* WorkshopFactory.swift in Sources */,
 				E42575122038B18A007C994D /* ViewController.swift in Sources */,
 				E42575102038B18A007C994D /* AppDelegate.swift in Sources */,
